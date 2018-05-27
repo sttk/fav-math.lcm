@@ -90,6 +90,11 @@ describe('fav.math.lcm', function() {
     expect(lcm(-0, 0)).to.equal(0);
     expect(lcm(0, -0)).to.equal(0);
   });
+
+  it ('Should calculate even large number as acculately as possible',
+  function() {
+    expect(lcm(900719925474099, 30)).to.equal(9007199254740990);
+  });
 });
 
 
